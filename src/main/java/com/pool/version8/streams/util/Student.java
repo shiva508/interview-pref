@@ -1,18 +1,22 @@
 package com.pool.version8.streams.util;
 
+import java.util.List;
+
 public class Student {
     private String firstName;
     private String lastName;
     private Integer eduLevel;
     private Integer age;
     private String gender;
+    private List<Role> roles;
 
-    public Student(String firstName, String lastName, Integer eduLevel, Integer age, String gender) {
+    public Student(String firstName, String lastName, Integer eduLevel, Integer age, String gender, List<Role> roles) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.eduLevel = eduLevel;
         this.age = age;
         this.gender = gender;
+        this.roles = roles;
     }
 
     public String getFirstName() {
@@ -55,10 +59,23 @@ public class Student {
         this.gender = gender;
     }
 
-    @Override
-    public String toString() {
-        return "Student [firstName=" + firstName + ", lastName=" + lastName + ", eduLevel=" + eduLevel + ", age=" + age
-                + ", gender=" + gender + "]";
+    public List<Role> getRoles() {
+        return roles;
     }
 
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", eduLevel=" + eduLevel +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                ", roles=" + roles +
+                '}';
+    }
 }

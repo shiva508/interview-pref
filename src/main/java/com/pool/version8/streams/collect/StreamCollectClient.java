@@ -5,12 +5,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import com.pool.version8.streams.util.StreamUtill;
+import com.pool.version8.streams.util.StreamUtil;
 import com.pool.version8.streams.util.Student;
 
 public class StreamCollectClient {
     public static void main(String[] args) {
-        List<Student> students = StreamUtill.studentsBuilder();
+        List<Student> students = StreamUtil.studentsBuilder();
         simpleCollectOperation(students);
         simpleCollectOperationByMap(students);
         simpleCollectOperation3Param(students);
