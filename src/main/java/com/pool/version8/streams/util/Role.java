@@ -2,7 +2,7 @@ package com.pool.version8.streams.util;
 
 import java.util.Objects;
 
-public class Role {
+public class Role implements Comparable<Role>{
     private String roleName;
 
     public Role(String roleName) {
@@ -24,6 +24,7 @@ public class Role {
                 '}';
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -35,5 +36,10 @@ public class Role {
     @Override
     public int hashCode() {
         return Objects.hash(roleName);
+    }
+
+    @Override
+    public int compareTo(Role o) {
+        return this.getRoleName().compareTo(o.getRoleName());
     }
 }

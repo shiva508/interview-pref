@@ -16,4 +16,8 @@ public class StreamUtil {
                 new Student("Mounika", "Dasari", 16, 18, "F",user),
                 new Student("Kavya", "Dasari", 16, 16, "F",useradmin));
     }
+
+    public static List<Role> rolesBuilder(){
+        return Arrays.asList(new Role("USER"),new Role("MANAGER"),new Role("ADMIN"));
+    }
 }
