@@ -7,6 +7,6 @@ public class StreamConcatClient {
         Stream<String> streamOne = Stream.of("I", "AM", "Good ");
         Stream<String> streamTwo = Stream.of("AT", "SOMETHING", "-Shiva");
         Stream<String> mergedStream = Stream.concat(streamOne, streamTwo);
-        mergedStream.forEach(names -> System.out.println(names));
+        mergedStream.forEach(System.out::println);
     }
 }
