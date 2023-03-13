@@ -14,7 +14,8 @@ public class StreamUtil {
                 new Student("Ravi", "Dasari", 15, 20, "M",user),
                 new Student("Rajeswari", "Dasari", 16, 20, "F",useradmin),
                 new Student("Mounika", "Dasari", 16, 18, "F",user),
-                new Student("Kavya", "Dasari", 16, 16, "F",useradmin));
+                new Student("Kavya", "Dasari", 16, 16, "F",useradmin),
+                new Student("Venu", "Arutla", 16, 16, "M",useradmin));
     }
 
     public static List<Role> rolesBuilder(){
